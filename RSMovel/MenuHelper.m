@@ -98,7 +98,7 @@
 		} else if ([categoria isEqualToString:@"eventos"]) {
 			secao = [[Secao alloc] initWithTitle:@"Eventos" andIcon:@"ico-eventos.png"];
 		} else if ([categoria isEqualToString:@"turismo"]) {
-			secao = [[Secao alloc] initWithTitle:@"Turismo" andIcon:@"ico-eventos.png"];
+			secao = [[Secao alloc] initWithTitle:@"Turismo" andIcon:@"ico-turismo.png"];
 		}
 		NSArray *itens = [menuItem objectForKey:@"itens"];
 		for (NSDictionary *item in itens)

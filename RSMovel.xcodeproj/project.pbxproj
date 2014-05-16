@@ -45,6 +45,7 @@
 		20BA00D018EDCDF3006231FE /* ico-servidor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20BA00C218EDCDF3006231FE /* ico-servidor@2x.png */; };
 		20BA00D418EDD432006231FE /* ico-cidadania@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20BA00D218EDD432006231FE /* ico-cidadania@2x.png */; };
 		20BA00D518EDD432006231FE /* ico-transito@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20BA00D318EDD432006231FE /* ico-transito@2x.png */; };
+		20C27873192653AC00FA6782 /* ico-turismo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20C27872192653AC00FA6782 /* ico-turismo@2x.png */; };
 		20CE14F71805D4DE00D6D204 /* logo_gov@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20CE14F51805D4DE00D6D204 /* logo_gov@2x.png */; };
 		20CE14F81805D4DE00D6D204 /* logo_gov.png in Resources */ = {isa = PBXBuildFile; fileRef = 20CE14F61805D4DE00D6D204 /* logo_gov.png */; };
 		20D861801806EA54009B6F11 /* icon_telephone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D8617F1806EA54009B6F11 /* icon_telephone@2x.png */; };
@@ -115,6 +116,7 @@
 		20BA00C218EDCDF3006231FE /* ico-servidor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-servidor@2x.png"; sourceTree = "<group>"; };
 		20BA00D218EDD432006231FE /* ico-cidadania@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-cidadania@2x.png"; sourceTree = "<group>"; };
 		20BA00D318EDD432006231FE /* ico-transito@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-transito@2x.png"; sourceTree = "<group>"; };
+		20C27872192653AC00FA6782 /* ico-turismo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-turismo@2x.png"; sourceTree = "<group>"; };
 		20CE14F51805D4DE00D6D204 /* logo_gov@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_gov@2x.png"; sourceTree = "<group>"; };
 		20CE14F61805D4DE00D6D204 /* logo_gov.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_gov.png; sourceTree = "<group>"; };
 		20D8617F1806EA54009B6F11 /* icon_telephone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_telephone@2x.png"; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 		9C3D31BE17FFD41B002B9963 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				20C27872192653AC00FA6782 /* ico-turismo@2x.png */,
 				202D984F18F87049001B104D /* ico-empresarial@2x.png */,
 				202D985018F87049001B104D /* ico-eventos@2x.png */,
 				20BA00D218EDD432006231FE /* ico-cidadania@2x.png */,
@@ -377,6 +380,7 @@
 				20BA00C418EDCDF3006231FE /* ico-administracao@2x.png in Resources */,
 				20BA00C718EDCDF3006231FE /* ico-agua@2x.png in Resources */,
 				20BA00D418EDD432006231FE /* ico-cidadania@2x.png in Resources */,
+				20C27873192653AC00FA6782 /* ico-turismo@2x.png in Resources */,
 				20D861881807023B009B6F11 /* logo_gov_150@2x.png in Resources */,
 				20460C1519229C6300A4EEDF /* menu.json in Resources */,
 				20BA00D018EDCDF3006231FE /* ico-servidor@2x.png in Resources */,

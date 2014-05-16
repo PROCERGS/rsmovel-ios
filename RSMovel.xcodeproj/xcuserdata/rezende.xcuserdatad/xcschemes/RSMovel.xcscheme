@@ -17,7 +17,7 @@
                BlueprintIdentifier = "209B813317F9C0E100A19F9B"
                BuildableName = "RSMovel.app"
                BlueprintName = "RSMovel"
-               ReferencedContainer = "container:RSMovel.xcodeproj">
+               ReferencedContainer = "container:rsmovel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "209B814E17F9C0E100A19F9B"
                BuildableName = "RSMovelTests.xctest"
                BlueprintName = "RSMovelTests"
-               ReferencedContainer = "container:RSMovel.xcodeproj">
+               ReferencedContainer = "container:rsmovel.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "209B813317F9C0E100A19F9B"
             BuildableName = "RSMovel.app"
             BlueprintName = "RSMovel"
-            ReferencedContainer = "container:RSMovel.xcodeproj">
+            ReferencedContainer = "container:rsmovel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "209B813317F9C0E100A19F9B"
             BuildableName = "RSMovel.app"
             BlueprintName = "RSMovel"
-            ReferencedContainer = "container:RSMovel.xcodeproj">
+            ReferencedContainer = "container:rsmovel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -82,7 +82,7 @@
             BlueprintIdentifier = "209B813317F9C0E100A19F9B"
             BuildableName = "RSMovel.app"
             BlueprintName = "RSMovel"
-            ReferencedContainer = "container:RSMovel.xcodeproj">
+            ReferencedContainer = "container:rsmovel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
