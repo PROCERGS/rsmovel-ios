@@ -16,5 +16,6 @@
 - (id) init;
 - (NSArray*) secoes;
 - (NSArray*) sitesForSecao:(Secao*)secao;
+- (NSArray*) destaques;
 
 @end

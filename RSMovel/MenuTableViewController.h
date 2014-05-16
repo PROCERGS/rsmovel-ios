@@ -10,6 +10,7 @@
 
 @interface MenuTableViewController : UITableViewController
 @property (strong, nonatomic) IBOutlet UITableView *tableview;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollview;
 
 
 @end

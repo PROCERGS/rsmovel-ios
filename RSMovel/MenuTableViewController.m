@@ -11,6 +11,7 @@
 #import "MenuHelper.h"
 #import "Site.h"
 #import "WebViewController.h"
+#import "Utils.h"
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
@@ -22,7 +23,11 @@
 
 NSMutableArray *lista;
 NSMutableDictionary *tmpDict;
+NSArray *destaquesArray;
 MenuHelper *menu;
+
+NSInteger currentPage;
+NSInteger numberOfPages;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -39,6 +44,16 @@ MenuHelper *menu;
 	
 	menu = [[MenuHelper alloc] init];
 	
+	
+	destaquesArray = [menu destaques];
+	if (destaquesArray.count > 0) {
+		[self setupDestaques];
+	} else {
+		self.scrollview.frame = CGRectMake(0,0,0,0);
+		[self.scrollview removeFromSuperview];
+	}
+
+	
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -49,7 +64,6 @@ MenuHelper *menu;
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -105,12 +119,105 @@ MenuHelper *menu;
 	
 	if ([segue.identifier isEqualToString:@"telefones"])
 	{
-		Site *site = [[Site alloc] initWithTitle:@"Agenda Telefônica" andUrl:@"http://m2.rs.gov.br/site/agenda"];
+		Site *site = [[Site alloc] initWithTitle:@"Agenda Telefônica" andUrl:@"http://m.rs.gov.br/site/agenda"];
 		WebViewController *destViewController = segue.destinationViewController;
 		destViewController.tituloSite = site.tituloSite;
 		destViewController.urlSite = site.url;
 		self.title = @" ";
 	}
+}
+
+
+
+
+
+
+- (void) setupDestaques
+{
+	numberOfPages = destaquesArray.count;
+	NSMutableArray *colorsBG = [@[@"#C93A27", @"#D9A133", @"#BAC927"] mutableCopy];
+	NSArray *colorsFG = @[@"#FFFFFF", @"#FFFFFF", @"#FFFFFF"];
+	NSUInteger counter = 0;
+	for (int x = 0; x < [colorsBG count]; x++) {
+		int randInt = (arc4random() % ([colorsBG count] - x)) + x;
+		[colorsBG exchangeObjectAtIndex:x withObjectAtIndex:randInt];
+	}
+	
+	
+	for (int i = 0; i < destaquesArray.count; i++)
+	{
+		NSString *corFundo = [colorsBG objectAtIndex:counter];
+		NSString *corTexto = [colorsFG objectAtIndex:counter];
+		counter++;
+		if (counter >= colorsBG.count) {
+			counter = 0;
+		}
+		
+		CGRect frame;
+		frame.origin.x = self.scrollview.frame.size.width * i;
+		frame.size = self.scrollview.frame.size;
+		self.scrollview.pagingEnabled = YES;
+        
+        
+        CGRect frameLabel = CGRectMake(5, 5, 310, 70);
+        UILabel *msg = [[UILabel alloc] initWithFrame:frameLabel];
+		msg.text = [[destaquesArray objectAtIndex:i] objectForKey:@"titulo"];
+        msg.numberOfLines = 2;
+        msg.lineBreakMode = NSLineBreakByWordWrapping;
+        msg.font = [UIFont fontWithName:@"HelveticaNeue" size:18.0];
+		
+		msg.textColor = [Utils colorFromHexString:corTexto];
+		msg.textAlignment = NSTextAlignmentCenter;
+        msg.tag = i;
+        
+        UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(userTappedOnLink:)];
+        [msg setUserInteractionEnabled:YES];
+        [msg addGestureRecognizer:gesture];
+        
+        UIView *view = [[UIView alloc] initWithFrame:frame];
+        view.backgroundColor = [Utils colorFromHexString:corFundo];
+        [view addSubview:msg];
+		
+		
+		
+		[self.scrollview addSubview:view];
+		
+		
+	}
+	UIView *linhaBranca = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320*destaquesArray.count, 1)];
+	linhaBranca.backgroundColor = [Utils colorFromHexString:@"#FFFFFF"];
+	[self.scrollview addSubview:linhaBranca];
+	
+	
+	self.scrollview.contentSize =  CGSizeMake(self.scrollview.frame.size.width * destaquesArray.count, self.scrollview.frame.size.height);
+    
+    [[NSTimer scheduledTimerWithTimeInterval:6
+                                      target:self
+                                    selector:@selector(scrollPages)
+                                    userInfo:Nil
+                                     repeats:YES] fire];
+}
+
+- (void)userTappedOnLink:(UIGestureRecognizer*)gestureRecognizer
+{
+	self.title = @" ";
+	WebViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"webview"];
+	NSString *tit = [[destaquesArray objectAtIndex:gestureRecognizer.view.tag] objectForKey:@"titulo"];
+	NSString *url = [[destaquesArray objectAtIndex:gestureRecognizer.view.tag] objectForKey:@"url"];
+
+	controller.tituloSite = tit;
+	controller.urlSite = url;
+	[self.navigationController pushViewController:controller animated:YES];
+}
+
+-(void)scrollToPage:(NSInteger)aPage{
+    float myPageWidth = [self.scrollview frame].size.width;
+    [self.scrollview setContentOffset:CGPointMake(aPage*myPageWidth,0) animated:YES];
+}
+
+-(void)scrollPages{
+    [self scrollToPage:currentPage%numberOfPages];
+    currentPage++;
 }
 
 @end

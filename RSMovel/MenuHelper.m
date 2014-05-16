@@ -66,7 +66,7 @@
 	for (NSDictionary *menuItem in secoes)
 	{
 		NSString *categoria = [menuItem objectForKey:@"categoria"];
-		Secao *secao;
+		Secao *secao = [[Secao alloc] initWithTitle:@"Sem categoria" andIcon:@"ico-outros.png"];
 		if ([categoria isEqualToString:@"especial"]) {
 			secao = [[Secao alloc] initWithTitle:@"Especial" andIcon:@"ico-especial.png"];
 		} else if ([categoria isEqualToString:@"servidor_publico"]) {
@@ -97,6 +97,8 @@
 			secao = [[Secao alloc] initWithTitle:@"Cidadania" andIcon:@"ico-cidadania.png"];
 		} else if ([categoria isEqualToString:@"eventos"]) {
 			secao = [[Secao alloc] initWithTitle:@"Eventos" andIcon:@"ico-eventos.png"];
+		} else if ([categoria isEqualToString:@"turismo"]) {
+			secao = [[Secao alloc] initWithTitle:@"Turismo" andIcon:@"ico-eventos.png"];
 		}
 		NSArray *itens = [menuItem objectForKey:@"itens"];
 		for (NSDictionary *item in itens)
@@ -109,6 +111,17 @@
 			[menu addObject:secao];
 		}
 	}
+}
+
+- (NSArray*) destaques
+{
+	NSDictionary *menuLocal = [MenuHelper dictionaryWithContentsOfJSONString:@"menu.json"];
+	NSArray *destaquesArray;
+	destaquesArray = [menuLocal objectForKey:@"destaques"];
+	if (destaquesArray == nil) {
+		destaquesArray = [[NSArray alloc] init];
+	}
+	return destaquesArray;
 }
 
 
