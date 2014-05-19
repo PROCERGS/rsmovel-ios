@@ -352,7 +352,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 209B812F17F9C0E100A19F9B /* Build configuration list for PBXProject "RSMovel" */;
+			buildConfigurationList = 209B812F17F9C0E100A19F9B /* Build configuration list for PBXProject "rsmovel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -621,7 +621,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		209B812F17F9C0E100A19F9B /* Build configuration list for PBXProject "RSMovel" */ = {
+		209B812F17F9C0E100A19F9B /* Build configuration list for PBXProject "rsmovel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				209B815E17F9C0E100A19F9B /* Debug */,

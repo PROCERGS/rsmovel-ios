@@ -194,7 +194,7 @@ CEP 90010-282</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o2g-dO-xMp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="539"/>
+            <point key="canvasLocation" x="1032" y="537"/>
         </scene>
         <!--Sub Menu Table View Controller-->
         <scene sceneID="llC-Jp-KlJ">
@@ -239,7 +239,7 @@ CEP 90010-282</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9M9-o0-dm4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="978" y="-322"/>
+            <point key="canvasLocation" x="1016" y="-324"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="fWB-F7-x0E">
@@ -280,7 +280,7 @@ CEP 90010-282</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YLW-B9-vlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478" y="127"/>
+            <point key="canvasLocation" x="1568" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6x0-nR-qeV">
@@ -312,6 +312,6 @@ CEP 90010-282</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="FWM-ny-9Gs"/>
+        <segue reference="xJF-lJ-Hz4"/>
     </inferredMetricsTieBreakers>
 </document>
