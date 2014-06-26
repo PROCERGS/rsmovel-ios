@@ -18,11 +18,11 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         </scrollView>
                         <view key="tableFooterView" contentMode="scaleToFill" id="x5p-U0-gnZ">
-                            <rect key="frame" x="0.0" y="146" width="320" height="99"/>
+                            <rect key="frame" x="0.0" y="146" width="320" height="70"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_gov_150.png" translatesAutoresizingMaskIntoConstraints="NO" id="N26-nY-KUJ">
-                                    <rect key="frame" x="0.0" y="30" width="320" height="40"/>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brasao_RS_Rodape.png" translatesAutoresizingMaskIntoConstraints="NO" id="N26-nY-KUJ">
+                                    <rect key="frame" x="0.0" y="15" width="320" height="40"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </imageView>
                             </subviews>
@@ -134,9 +134,12 @@ CEP 90010-282</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_gov.png" translatesAutoresizingMaskIntoConstraints="NO" id="BaF-VR-91c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brasao_RS_Sobre.png" translatesAutoresizingMaskIntoConstraints="NO" id="BaF-VR-91c">
                                 <rect key="frame" x="10" y="20" width="300" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Elv-nA-r6G"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acesse o RS Móvel na Web" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wce-8R-jh1">
                                 <rect key="frame" x="20" y="301" width="280" height="24"/>
@@ -170,24 +173,25 @@ CEP 90010-282</string>
                             <constraint firstItem="tJh-Ke-mwL" firstAttribute="leading" secondItem="wce-8R-jh1" secondAttribute="leading" id="8Cg-7t-Pqh"/>
                             <constraint firstItem="R47-zu-AYf" firstAttribute="bottom" secondItem="oLT-4n-nFV" secondAttribute="bottom" id="9cC-iP-4pe"/>
                             <constraint firstItem="Osf-nF-Z89" firstAttribute="trailing" secondItem="b7c-1z-Rsi" secondAttribute="trailing" id="DM0-am-MA7"/>
+                            <constraint firstItem="BaF-VR-91c" firstAttribute="centerX" secondItem="b7c-1z-Rsi" secondAttribute="centerX" id="HVd-R5-2Vb"/>
                             <constraint firstAttribute="trailing" secondItem="b7c-1z-Rsi" secondAttribute="trailing" constant="20" symbolic="YES" id="Hr5-SG-cOs"/>
                             <constraint firstItem="qTM-MC-JYL" firstAttribute="leading" secondItem="wce-8R-jh1" secondAttribute="leading" id="Jnz-6t-7UN"/>
                             <constraint firstItem="b7c-1z-Rsi" firstAttribute="leading" secondItem="F1F-66-D74" secondAttribute="leading" constant="20" symbolic="YES" id="Jrw-Xz-gie"/>
                             <constraint firstItem="Osf-nF-Z89" firstAttribute="trailing" secondItem="Iop-OB-fGF" secondAttribute="trailing" id="MUj-Y2-z2U"/>
                             <constraint firstItem="wce-8R-jh1" firstAttribute="trailing" secondItem="R47-zu-AYf" secondAttribute="trailing" id="Rvn-s5-Yg9"/>
+                            <constraint firstItem="BaF-VR-91c" firstAttribute="leading" secondItem="F1F-66-D74" secondAttribute="leading" constant="10" id="UiD-9y-K58"/>
                             <constraint firstItem="Osf-nF-Z89" firstAttribute="leading" secondItem="b7c-1z-Rsi" secondAttribute="leading" id="Uv9-xm-kpp"/>
                             <constraint firstItem="qTM-MC-JYL" firstAttribute="top" secondItem="wce-8R-jh1" secondAttribute="bottom" constant="8" symbolic="YES" id="Vki-i3-pD3"/>
-                            <constraint firstItem="b7c-1z-Rsi" firstAttribute="top" secondItem="BaF-VR-91c" secondAttribute="bottom" constant="26" id="YPr-Pw-UMO"/>
-                            <constraint firstItem="BaF-VR-91c" firstAttribute="top" secondItem="F1F-66-D74" secondAttribute="top" constant="20" symbolic="YES" id="b6B-3g-obI"/>
                             <constraint firstAttribute="bottom" secondItem="oLT-4n-nFV" secondAttribute="bottom" constant="20" symbolic="YES" id="czS-ML-1i8"/>
                             <constraint firstItem="R47-zu-AYf" firstAttribute="leading" secondItem="oLT-4n-nFV" secondAttribute="trailing" constant="8" symbolic="YES" id="f1J-nz-fOu"/>
-                            <constraint firstItem="BaF-VR-91c" firstAttribute="centerX" secondItem="b7c-1z-Rsi" secondAttribute="centerX" id="hRA-iI-b81"/>
                             <constraint firstItem="tJh-Ke-mwL" firstAttribute="top" secondItem="Iop-OB-fGF" secondAttribute="bottom" constant="8" symbolic="YES" id="iyA-q1-SAw"/>
                             <constraint firstItem="tJh-Ke-mwL" firstAttribute="trailing" secondItem="Iop-OB-fGF" secondAttribute="trailing" id="nDj-Zx-VHO"/>
                             <constraint firstItem="wce-8R-jh1" firstAttribute="top" secondItem="tJh-Ke-mwL" secondAttribute="bottom" constant="8" symbolic="YES" id="rkM-pz-T9G"/>
                             <constraint firstItem="Iop-OB-fGF" firstAttribute="leading" secondItem="Osf-nF-Z89" secondAttribute="leading" id="s6w-Yd-5mg"/>
                             <constraint firstItem="qTM-MC-JYL" firstAttribute="leading" secondItem="oLT-4n-nFV" secondAttribute="leading" id="vb5-UZ-vDt"/>
+                            <constraint firstItem="BaF-VR-91c" firstAttribute="top" secondItem="F1F-66-D74" secondAttribute="top" constant="20" symbolic="YES" id="wTL-O4-85o"/>
                             <constraint firstItem="tJh-Ke-mwL" firstAttribute="leading" secondItem="Iop-OB-fGF" secondAttribute="leading" id="wgI-gi-uDW"/>
+                            <constraint firstItem="b7c-1z-Rsi" firstAttribute="top" secondItem="BaF-VR-91c" secondAttribute="bottom" constant="26" id="wqJ-xY-vE4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sobre" id="FcA-cM-VYZ"/>
@@ -300,11 +304,11 @@ CEP 90010-282</string>
     </scenes>
     <resources>
         <image name="44x44_telefone.png" width="22" height="22"/>
+        <image name="Brasao_RS_Rodape.png" width="125" height="50"/>
+        <image name="Brasao_RS_Sobre.png" width="225" height="83"/>
         <image name="ico-cidadania.png" width="32" height="32"/>
         <image name="informacao_44x44.png" width="22" height="22"/>
         <image name="logo-procergs.png" width="167" height="144"/>
-        <image name="logo_gov.png" width="300" height="80"/>
-        <image name="logo_gov_150.png" width="150" height="40"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

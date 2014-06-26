@@ -11,6 +11,8 @@
 		202D985118F87049001B104D /* ico-empresarial@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 202D984F18F87049001B104D /* ico-empresarial@2x.png */; };
 		202D985218F87049001B104D /* ico-eventos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 202D985018F87049001B104D /* ico-eventos@2x.png */; };
 		20460C1519229C6300A4EEDF /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 20460C1419229C6300A4EEDF /* menu.json */; };
+		204F8E2E195C8EC700028E3D /* Brasao_RS_Rodape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 204F8E2C195C8EC700028E3D /* Brasao_RS_Rodape@2x.png */; };
+		204F8E2F195C8EC700028E3D /* Brasao_RS_Sobre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 204F8E2D195C8EC700028E3D /* Brasao_RS_Sobre@2x.png */; };
 		20959CDF17FEF83C00B31D9F /* SobreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20959CDE17FEF83C00B31D9F /* SobreViewController.m */; };
 		20959CE217FEFDD900B31D9F /* 20121011141831logo_governo_rs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 20959CE117FEFDD900B31D9F /* 20121011141831logo_governo_rs.jpg */; };
 		20959CE417FF000500B31D9F /* logo-procergs.png in Resources */ = {isa = PBXBuildFile; fileRef = 20959CE317FF000500B31D9F /* logo-procergs.png */; };
@@ -72,6 +74,8 @@
 		202D984F18F87049001B104D /* ico-empresarial@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-empresarial@2x.png"; sourceTree = "<group>"; };
 		202D985018F87049001B104D /* ico-eventos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ico-eventos@2x.png"; sourceTree = "<group>"; };
 		20460C1419229C6300A4EEDF /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		204F8E2C195C8EC700028E3D /* Brasao_RS_Rodape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brasao_RS_Rodape@2x.png"; sourceTree = "<group>"; };
+		204F8E2D195C8EC700028E3D /* Brasao_RS_Sobre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brasao_RS_Sobre@2x.png"; sourceTree = "<group>"; };
 		20959CDD17FEF83C00B31D9F /* SobreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SobreViewController.h; sourceTree = "<group>"; };
 		20959CDE17FEF83C00B31D9F /* SobreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SobreViewController.m; sourceTree = "<group>"; };
 		20959CE117FEFDD900B31D9F /* 20121011141831logo_governo_rs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 20121011141831logo_governo_rs.jpg; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 		20959CE017FEFDCB00B31D9F /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				204F8E2C195C8EC700028E3D /* Brasao_RS_Rodape@2x.png */,
+				204F8E2D195C8EC700028E3D /* Brasao_RS_Sobre@2x.png */,
 				20D861851807023B009B6F11 /* logo_gov_150.png */,
 				20D861861807023B009B6F11 /* logo_gov_150@2x.png */,
 				20D861811806FF97009B6F11 /* 44x44_telefone@2x.png */,
@@ -395,6 +401,7 @@
 				20959CE217FEFDD900B31D9F /* 20121011141831logo_governo_rs.jpg in Resources */,
 				209B814A17F9C0E100A19F9B /* Images.xcassets in Resources */,
 				20BA00CE18EDCDF3006231FE /* ico-saude@2x.png in Resources */,
+				204F8E2E195C8EC700028E3D /* Brasao_RS_Rodape@2x.png in Resources */,
 				20D861871807023B009B6F11 /* logo_gov_150.png in Resources */,
 				20959CE417FF000500B31D9F /* logo-procergs.png in Resources */,
 				20BA00C518EDCDF3006231FE /* ico-agenda@2x.png in Resources */,
@@ -403,6 +410,7 @@
 				20BA00CB18EDCDF3006231FE /* ico-especial@2x.png in Resources */,
 				20BA00D518EDD432006231FE /* ico-transito@2x.png in Resources */,
 				20BA00CC18EDCDF3006231FE /* ico-legislativo@2x.png in Resources */,
+				204F8E2F195C8EC700028E3D /* Brasao_RS_Sobre@2x.png in Resources */,
 				20CE14F81805D4DE00D6D204 /* logo_gov.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
