@@ -59,6 +59,12 @@ NSInteger numberOfPages;
 		self.scrollview.frame = CGRectMake(0,0,0,0);
 		[self.scrollview removeFromSuperview];
 	}
+	
+	//NSArray *cookieArray;
+	//cookieArray = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
+	//for (NSHTTPCookie *each in cookieArray) {
+	//	NSLog(@"\nCOOKIE Name: %@, Value:%@, Expires At: %@\n", [each name], [each value], [each expiresDate]);
+    //}
 
 }
 
