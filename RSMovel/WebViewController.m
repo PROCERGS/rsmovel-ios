@@ -56,7 +56,6 @@
     cookieHeaders = [NSHTTPCookie requestHeaderFieldsWithCookies: cookies];
     request = [[NSMutableURLRequest alloc] initWithURL: url];
     [request setValue: [cookieHeaders objectForKey: @"Cookie"] forHTTPHeaderField: @"Cookie"];
-	
     [self.webview loadRequest: request];
 }
 
